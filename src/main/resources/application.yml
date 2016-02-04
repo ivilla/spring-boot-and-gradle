@@ -1,0 +1,17 @@
+---
+
+server.port: 9090
+spring.datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    #url: jdbc:mysql://mysql-sonar.aeromexico.io:3306/qadb
+    url: jdbc:mysql://localhost:3306/qadb
+    username: "root"
+    #password: ".kirkoff$8790"
+    password: root
+    #dbCreate: create-drop
+spring.jpa:
+    show_sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+      ddl-auto: create
